@@ -7,7 +7,8 @@ module.exports = {
     "./src/**/*.{html,js}",
     './index.html',
   ], 
-  darkMode: 'class',
+  darkMode: 'class', 
+  
   
   theme: {
     extend:{
