@@ -2,6 +2,7 @@
 <html class="dark scroll-smooth">
 <head>
   <title>Senior Product Designer</title>
+  <script src="./js/modeSwitch.js"></script>
   <script src="./js/links.js"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -20,23 +21,20 @@
 </a>
 
 <!-- Banner -->
-<section  id="home_banner" class= "md:py-32 2xl:pl-[300px] 2xl:pr-20 xl:p-20 flex flex-col p-5 dark:bg-zinc-950 2xl:min-h-[728px]">
+<section  id="home_banner" class= "md:py-32 2xl:pl-[300px] 2xl:pr-20 xl:p-20 flex flex-col p-5 bg-zinc-950 dark:bg-zinc-950 2xl:min-h-[728px]">
   <svg class="relative mb-14 start-0 animate-spin-slow 2xl:absolute 2xl:start-36" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M-1.74846e-06 40L36.3045 38.4693L11.7157 11.7157L38.4693 36.3045L40 -9.37785e-06L41.5307 36.3045L68.2843 11.7157L43.6955 38.4693L80 40L43.6955 41.5307L68.2843 68.2843L41.5307 43.6955L40 80L38.4693 43.6955L11.7157 68.2843L36.3045 41.5307L-1.74846e-06 40Z" fill="#BEF264"/>
   </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
-  </svg>
   
-  <h1 class="dark:text-white max-w-[900px] text-6xl xl:text-8xl uppercase font-light">Senior Product Designer based in Brazil.</h1>
+  <h1 class="dark:text-white text-white max-w-[900px] text-6xl xl:text-8xl uppercase font-light">Senior Product Designer based in Brazil.</h1>
   <div class="max-w-[900px] flex flex-col">
-    <span class="w-full text-right font-light uppercase dark:text-lime-300 text-2xl">Gabriel</span>
-    <span class="w-full text-right font-light uppercase dark:text-white text-2xl">Lisboa</span>
+    <span class="w-full text-right font-light uppercase text-lime-300 dark:text-lime-300 text-2xl">Gabriel</span>
+    <span class="w-full text-right font-light uppercase text-white dark:text-white text-2xl">Lisboa</span>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class=" animate-bounce dark:text-white w-6 h-6">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class=" animate-bounce text-white dark:text-white w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
   </svg>
-   
+  <button id="toggleBtn" class=" bg-lime-300">Toggle</button>
 </section>
 
 <!-- Billboard -->
@@ -76,15 +74,15 @@
 </div>
 
 <!-- About -->
-<section id="about" class="dark:bg-zinc-800 gap-14 flex flex-col px-5 py-20 2xl:pl-[300px] 2xl:pr-20 xl:px-20 md:py-32">
+<section id="about" class="dark:bg-zinc-800 bg-zinc-00 gap-14 flex flex-col px-5 py-20 2xl:pl-[300px] 2xl:pr-20 xl:px-20 md:py-32">
   <h2 class="tracking-tighter dark:text-white uppercase text-lightdark:text-white  text-4xl lg:text-6xl font-light">About</h2>
   <div class="max-w-screen-xl  flex flex-col gap-14">
     <div class="md:flex-row flex flex-col w-full justify-between ">
       <div class="flex flex-col max-w-[900px] gap-10 ">
-        <p class="dark:text-white font-light md:max-w-3xl  text-2xl">In my work I follow the principle of "simple that works"," creating designs that are clear, clean and minimalist, with the aim of effectively fulfilling the purpose of the project.</p>
+        <p class="dark:text-white text-zinc-950 font-light md:max-w-3xl text-2xl">In my work I follow the principle of "simple that works"," creating designs that are clear, clean and minimalist, with the aim of effectively fulfilling the purpose of the project.</p>
         <div class="md:max-w-xl xl:max-w-none flex-col xl:flex-row flex gap-10">
-          <p class="w-full dark:text-zinc-400 font-light text-base lg:text-xl">Every line, font and white space chosen is considered with precision, resulting in designs that exude elegance and sophistication. This attention to detail is not just esthetic, but a deliberate strategy to optimize usability and user experience.</p>
-          <p class="w-full dark:text-zinc-400 font-light text-base lg:text-xl">In addition to my design skills, I have an understanding and experience with HTML and CSS, and I am a student of JavaScript. This allows me to interact with and contribute to multidisciplinary technology projects</p>
+          <p class="w-full dark:text-zinc-400 text-zinc-500 font-light text-base lg:text-xl">Every line, font and white space chosen is considered with precision, resulting in designs that exude elegance and sophistication. This attention to detail is not just esthetic, but a deliberate strategy to optimize usability and user experience.</p>
+          <p class="w-full dark:text-zinc-400 text-zinc-500 font-light text-base lg:text-xl">In addition to my design skills, I have an understanding and experience with HTML and CSS, and I am a student of JavaScript. This allows me to interact with and contribute to multidisciplinary technology projects</p>
         </div>
       </div>
       <img class="mt-14 md:mt-0 md:ml-14 xl:ml-20 w-40 h-40 md:w-64 md:h-64" src="src/assets/img/gab-image.png" alt="">
@@ -92,11 +90,11 @@
       
       <div class="flex flex-col md:flex-row w-full gap-10 max-w-[900px]">
         <div class="w-full flex flex-col gap-3">
-        <span class=" dark:text-lime-300 font-mono font-light text-7xl">5</span>
+        <span class=" dark:text-lime-300 text-lime-300 font-mono font-light text-7xl">5</span>
         <p class="w-full dark:text-zinc-400 font-light text-base lg:text-xl">years of experience</p>
       </div>    
       <div class="w-full flex flex-col gap-3">
-        <span class="dark:text-lime-300 font-mono font-light text-7xl" >100%</span>
+        <span class="dark:text-lime-300 text-lime-300 font-mono font-light text-7xl" >100%</span>
         <p class="w-full dark:text-zinc-400 font-light text-base lg:text-xl">of projects delivered on time.</p>
       </div>
 
@@ -189,6 +187,7 @@
     </li>
   </ul>
 </footer>
+
 </body>
 </html>
 
