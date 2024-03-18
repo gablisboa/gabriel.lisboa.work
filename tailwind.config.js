@@ -5,11 +5,12 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-    './index.html',
-  ], 
+    "./index.html"
+],
+
   darkMode: 'class', 
-  
-  theme: {
+
+theme: {
     extend:{
       colors: {
         link: colors.blue[300]
